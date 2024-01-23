@@ -6,5 +6,5 @@ from grp_slave.tasks import BaseTask
 
 class MiningTask(BaseTask):
     def run(self, offsets: tuple[int, int]):
-        hold_key("e", 6)
-        time.sleep(7)
+        hold_key("e", self.generate_delay(6))
+        time.sleep(self.generate_delay(7))

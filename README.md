@@ -11,5 +11,5 @@ automates some GrandRP things like:
 with features like:
 
 - [X] repeat count
-- [ ] dynamic / realistic delays
+- [X] dynamic / realistic delays
 - [ ] treasure location finder

@@ -1,3 +1,5 @@
+import random
+
 import PIL.ImageGrab as ImageGrab
 from PIL.Image import Image
 
