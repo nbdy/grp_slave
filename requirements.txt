@@ -1,0 +1,7 @@
+pyautogui
+PyWinCtl
+Pillow
+tqdm
+loguru
+customtkinter
+pyrunnable
