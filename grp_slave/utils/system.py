@@ -30,4 +30,4 @@ def is_admin():
 
 def elevate():
     log.debug("Restarting as admin")
-    ctypes.windll.shell32.ShellExecuteW(None, sys.executable, " ".join(sys.argv), None, 1)
+    ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)

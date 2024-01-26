@@ -17,15 +17,20 @@ class LinuxNotificationBar(CTkFrame):
 
 
 class UACNotificationBar(CTkFrame):
-    def __init__(self, parent: CTk):
+    def elevate(self):
+        elevate()
+        self.callback()
+
+    def __init__(self, parent: CTk, callback: callable):
         super().__init__(parent, fg_color="#fcb900")
+        self.callback = callback
         self.grid_columnconfigure(0, weight=2)
         self.grid_columnconfigure(1, weight=1)
 
         self.info_text_label = CTkLabel(self, text="This application needs admin privileges on Windows 11!", text_color="#fc3b00")
         self.info_text_label.grid(row=0, column=0, sticky="w")
 
-        self.restart_button = CTkButton(self, text="Restart as admin", width=80, command=elevate)
+        self.restart_button = CTkButton(self, text="Restart as admin", width=80, command=self.elevate)
         self.restart_button.grid(row=0, column=1, sticky="e")
 
 

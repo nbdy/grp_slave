@@ -4,7 +4,7 @@ automates some GrandRP things like:
 
 - [X] Mining
 - [X] Oil rig
-- [ ] Fishing
+- [X] Fishing
 - [ ] Farming
 - [ ] Electrician
 
