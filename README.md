@@ -12,4 +12,5 @@ with features like:
 
 - [X] repeat count
 - [X] dynamic / realistic delays
+- [ ] cancel task
 - [ ] treasure location finder
