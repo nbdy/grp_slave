@@ -4,5 +4,4 @@ Pillow
 tqdm
 loguru
 customtkinter
-pyrunnable
 pynput
